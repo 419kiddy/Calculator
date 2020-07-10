@@ -1,0 +1,14 @@
+#header{
+    background: linear-gradient(to bottom, #F89174 0%, #f8519f 50%, #fcff4e 100%);
+}
+#formula{
+    background: linear-gradient(to bottom, #dadada 0%, #ffffff 50%,  #dadada 100%);
+    width: 540px;
+}
+button{
+    background: radial-gradient(#3e61ff, #3124a0);
+}
+.btn-primary{
+    width: 100px;
+    height: 100px;
+}

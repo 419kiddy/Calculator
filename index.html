@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="calc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <div id="header">
+            <div class="container bg-gradient-secondary">
+                <div class="row">
+                    <div class="col-md-auto h1">Calculator</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 border">
+                        [calculate log]  <button id="clear" onclick="clearLog();">clear</button>
+                        <div class="hr-bar">
+                            <hr class="block h-3 w-full">
+                        </div>
+                        <div id="log"></div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="container">
+                            <div class="row">
+                                <div id="formula" class="shadow p-4 text-right">0</div>
+                            </div>
+                            <div class="">
+                                <div class="row">
+                                    <button type="button" id="1" class="btn btn-primary m-1 shadow" onclick="btn('1');">1</button>
+                                    <button type="button" id="2" class="btn btn-primary m-1 shadow" onclick="btn('2');">2</button>
+                                    <button type="button" id="3" class="btn btn-primary m-1 shadow" onclick="btn('3');">3</button>
+                                    <button type="button" id="+" class="btn btn-primary m-1 shadow" onclick="btn('+');">+</button>
+                                    <button type="button" id="C" class="btn btn-primary m-1 shadow" onclick="btn('C');">C</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" id="4" class="btn btn-primary m-1 shadow" onclick="btn('4');">4</button>
+                                    <button type="button" id="5" class="btn btn-primary m-1 shadow" onclick="btn('5');">5</button>
+                                    <button type="button" id="6" class="btn btn-primary m-1 shadow" onclick="btn('6');">6</button>
+                                    <button type="button" id="-" class="btn btn-primary m-1 shadow" onclick="btn('-');">-</button>
+                                    <button type="button" id="←" class="btn btn-primary m-1 shadow" onclick="btn('←');">←</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" id="7" class="btn btn-primary m-1 shadow" onclick="btn('7');">7</button>
+                                    <button type="button" id="8" class="btn btn-primary m-1 shadow" onclick="btn('8');">8</button>
+                                    <button type="button" id="9" class="btn btn-primary m-1 shadow" onclick="btn('9');">9</button>
+                                    <button type="button" id="*" class="btn btn-primary m-1 shadow" onclick="btn('*');">*</button>
+                                    <button type="button" id="\(" class="btn btn-primary m-1 shadow" onclick="btn('\(');">(</button>
+                                </div>
+                                <div class="row">
+                                    <button type="button" id="0" class="btn btn-primary m-1 shadow" onclick="btn('0');">0</button>
+                                    <button type="button" id="." class="btn btn-primary m-1 shadow" onclick="btn('.');">.</button>
+                                    <button type="button" id="=" class="btn btn-primary m-1 shadow" onclick="btn('=');">=</button>
+                                    <button type="button" id="/" class="btn btn-primary m-1 shadow" onclick="btn('/');">/</button>
+                                    <button type="button" id="\)" class="btn btn-primary m-1 shadow" onclick="btn('\)');">)</button>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="w-auto h-auto">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="calc.js"></script>
+
+</body>
+</html>
